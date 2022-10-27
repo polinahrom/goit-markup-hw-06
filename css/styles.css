@@ -382,6 +382,10 @@ font-size: 12px;
         line-height: 1.71;
         letter-spacing: 0.03em;
 }
+.checkbox-link {
+    color: var(--acceny-color);
+    border-bottom: var(--acceny-color);
+}
 .svg-check {
     display: flex;
     flex-wrap: nowrap;
