@@ -51,26 +51,26 @@
                         </svg>
                         </div>
                     </button>
+                    <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
                     <form class="form js-speaker-form">
-                        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
                         <div class="modal-p">
                         <label for="name" class="form-label">Ім'я</label>
                         <input type="text" class="form-input" name="name" id="name" autofocus/>
-                        <svg class="modal-icon">
+                        <svg class="modal-icon name">
                             <use href="./images/sprite.svg#icon-person"></use>
                         </svg>    
                         </div>
                         <div class="modal-p">
                         <label for="tel" class="form-label">Телефон</label>
                         <input type="tel" class="form-input" name="tel" id="tel" />
-                        <svg class="modal-icon">
+                        <svg class="modal-icon tel">
                             <use href="./images/sprite.svg#icon-tel"></use>
                         </svg>
                         </div>
                         <div class="modal-p">
                         <label for="mail" class="form-label">Пошта</label>
                         <input type="email" class="form-input" name="mail" id="mail" />
-                        <svg class="modal-icon">
+                        <svg class="modal-icon mail">
                             <use href="./images/sprite.svg#icon-modal-mail"></use>
                         </svg>
                         </div>
@@ -83,7 +83,7 @@
                                 <svg class="icon-check">
                                     <use href="./images/sprite.svg#icon-check"></use>
                                 </svg>
-                            </span>Погоджуюся з розсилкою та приймаю 
+                            </span><span class="checkbox-agree">Погоджуюся з розсилкою та приймаю</span>
                             <a href="#" class="checkbox-link">Умови договору</a></label>
                         <button type="submit" class="send">Відправити</button>
                     </form>
@@ -426,12 +426,12 @@
             </ul>
         </div>
         <div class="footer-form">
-            <h2 class="footer-form-title">Підпишіться на розсилку</h2>
-            <div class="form-follow"><label class="form-label"><input type="text" class="footer-form-input" placeholder="E-mail"/></label>
+            <p class="footer-form-title">Підпишіться на розсилку</p>
+            <form class="form-follow"><label class="form-label"><input type="text" class="footer-form-input" placeholder="E-mail"/></label>
             <button type="submit" class="follow">Підписатися<span><svg class="footer-icon-send">
                 <use href="./images/sprite.svg#icon-send"></use>
             </svg></span></button>
-            </div>
+            </form>
         </div>
         </div>
     </footer>

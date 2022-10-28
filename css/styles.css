@@ -290,13 +290,15 @@ position: absolute;
 
 .form {
     width: 528px;
-    padding: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
     
 }
 .modal-p {
     display: flex;
     flex-direction: column;
-    margin-bottom: 28px;
+    margin-bottom: 10px;
     position: relative;
 }
 .modal-p label {
@@ -324,6 +326,11 @@ position: absolute;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         min-height: 120px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        resize: none;
 }
 :placeholder-shown {
 font-size: 12px;
@@ -346,10 +353,20 @@ font-size: 12px;
     position: absolute;
     top: 33px;
     left: 15px;
-    width: 12px;
-    height: 12px;
     fill: var(--title-text-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-icon.name {
+    width: 12px;
+    height: 12px;
+}
+.modal-icon.tel {
+    width: 13px;
+    height: 13px;
+}
+.modal-icon.mail {
+    width: 15px;
+    height: 12px;
 }
 .form-input:focus ~ .modal-icon {
     fill: var(--acceny-color);
@@ -367,10 +384,13 @@ font-size: 12px;
         text-align: center;
         letter-spacing: 0.03em;
         margin-bottom: 12px;
+        margin-top: 40px;
 }
 .lable-check {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .checkbox {
     -moz-appearance: none;
@@ -382,9 +402,18 @@ font-size: 12px;
         line-height: 1.71;
         letter-spacing: 0.03em;
 }
+.checkbox-agree {
+    color: var(--primary-text-color);
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+}
 .checkbox-link {
     color: var(--acceny-color);
-    border-bottom: var(--acceny-color);
+    border-bottom: 1px solid var(--acceny-color);
+        font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
 }
 .svg-check {
     display: flex;
@@ -411,7 +440,7 @@ font-size: 12px;
 button.send {
     width: 200px;
     height: 50px;
-    padding: 52 10;
+    padding: 52px 10px;
     margin-top: 30px;
 }
 
@@ -920,13 +949,15 @@ a.map {
 .footer-form-title {
     font-weight: 700;
         font-size: 14px;
-        line-height: 1.14px;
+        line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--header-bg-color);
         margin-bottom: 20px;
 }
 .footer-form-input {
+    font-size: 16px;
+    color: var(--header-bg-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -937,6 +968,10 @@ a.map {
     padding-bottom: 15px;
     padding-left: 16px;
     padding-right: 16px;
+}
+.footer-form-input:placeholder-shown {
+    font-size: 16px;
+
 }
 .follow {
     display: flex;
