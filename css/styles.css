@@ -256,6 +256,7 @@ footer {
     position: absolute;
         min-width: 528px;
         min-height: 581px;
+        padding: 40px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -288,18 +289,14 @@ position: absolute;
     height: 11px;
 }
 
-.form {
-    width: 528px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    
-}
 .modal-p {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     position: relative;
+}
+.modal-p:last-child{
+    margin-bottom: 20px;
 }
 .modal-p label {
     margin-bottom: 4px;
@@ -384,7 +381,6 @@ font-size: 12px;
         text-align: center;
         letter-spacing: 0.03em;
         margin-bottom: 12px;
-        margin-top: 40px;
 }
 .lable-check {
     display: flex;
@@ -407,6 +403,7 @@ font-size: 12px;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
+        margin-right: 5px;
 }
 .checkbox-link {
     color: var(--acceny-color);
@@ -428,6 +425,10 @@ font-size: 12px;
     margin-right: 8.38px;
     background-color: var(--header-bg-color);
 }
+.icon-check {
+        width: 16px;
+            height: 15px;
+}
 .checkbox:checked + .svg-check {
     background-color: var(--acceny-color);
     border-color: var(--acceny-color);
@@ -445,7 +446,6 @@ button.send {
 }
 
 .hero button:not(.button-modal-close) {
-    display: inline-block;
     color: var(--second-text-color);
     background-color: var(--acceny-color);
     font-family: inherit;
@@ -977,6 +977,7 @@ a.map {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
     background-color: var(--acceny-color);
     color: var(--header-bg-color);
     width: 200px;
