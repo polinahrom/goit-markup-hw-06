@@ -293,9 +293,10 @@ position: absolute;
     margin-bottom: 10px;
     position: relative;
 }
-.modal-p .comment-textarea{
+.modal-p:last-child {
     margin-bottom: 20px;
 }
+
 .modal-p label {
     margin-bottom: 4px;
     text-align: left;
