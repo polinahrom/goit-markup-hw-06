@@ -293,7 +293,7 @@ position: absolute;
     margin-bottom: 10px;
     position: relative;
 }
-.modal-p:last-child {
+.form .modal-p:last-child {
     margin-bottom: 20px;
 }
 
@@ -386,6 +386,7 @@ font-size: 12px;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 .checkbox {
     -moz-appearance: none;
